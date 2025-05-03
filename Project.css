@@ -20,9 +20,6 @@ body {
   width: 100%;
   z-index: 1000;
 }
-.videosection {
-  margin-top: 60px;
-}
 
 .topbaner {
   display: flex;
@@ -147,7 +144,6 @@ body {
 .centralblock {
   background-color: #1f3b44;
   width: 50%;
-  height: 60%;
   display: flex;
   align-items: center;
   top: 50%;
