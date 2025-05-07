@@ -3,9 +3,24 @@
   padding: 0;
   box-sizing: border-box;
 }
-html,
-body {
+
+body,
+html {
+  min-height: 3000px;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100%;
   height: 100%;
+  position: relative;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nowbar {
@@ -14,7 +29,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #1f3b44;
-  padding: 20px 60px;
+  height: 90px;
   color: #f5af2d;
   top: 0;
   width: 100%;
@@ -24,6 +39,7 @@ body {
 .topbaner {
   display: flex;
   align-items: center;
+  padding-left: 50px;
 }
 
 .icon {
@@ -64,10 +80,21 @@ body {
   cursor: pointer;
 }
 
+.menu {
+  padding: 0 50px;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0 20px;
+}
+
 .menu a {
   color: #f5af2d;
   font-size: 20px;
-  margin-left: 20px;
   text-decoration: none;
 }
 
@@ -77,8 +104,8 @@ body {
 
 .videosection {
   width: 100%;
-  height: 800px;
   overflow: hidden;
+  margin-top: 90px;
 }
 
 .videosection video {
@@ -94,40 +121,34 @@ body {
   background-color: cornsilk;
   color: wheat;
   text-align: center;
-  left: 80px;
-  top: 30%;
+  left: 5%;
+  top: 0;
   position: absolute;
   z-index: 1;
-  transform: translateY(-50%);
 }
 
 .avatar {
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
+  object-fit: cover;
+  object-position: center 20%;
 }
 
 .rightblock {
   background-color: cornsilk;
   position: fixed;
-  top: 50%;
+  top: 250px;
   right: 0px;
-  transform: translateY(-50%);
   z-index: 1;
   display: flex;
-  padding: 10px 20px;
+  padding: 10px 18px;
   align-items: center;
   flex-direction: column;
 }
 
-.rightblock ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
 .rightblock li {
-  margin: 5px 0;
+  margin: 10px 0;
 }
 
 .rightblock a {
@@ -136,15 +157,76 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 40px;
+  width: 30p;
+  height: 40p;
   background-color: wheat;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.rightblock img {
+  width: 15px;
 }
 
 .centralblock {
   background-color: #1f3b44;
-  width: 50%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  top: 50%;
+  position: absolute;
+  width: 50%;
+  height: 450px;
+  left: 25%;
+  top: 550px;
+}
+
+.centrphoto {
+  width: 100%;
+  margin-left: 3%;
+}
+
+.zagolovok {
+  margin-bottom: 15px;
+  color: #f5af2d;
+}
+
+.centrphoto img {
+  max-height: 350px;
+  width: 90%;
+}
+
+.centrtext {
+  width: 80%;
+  color: #f5af2d;
+}
+
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 300px;
+}
+
+.sixcard {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.card {
+  background-color: orchid;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 12px;
+  padding: 10px 0;
+  text-align: center;
 }
